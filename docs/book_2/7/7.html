@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.3/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.13.3"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.3/dist/index.umd.min.js"></script><script>(r => {
+          setTimeout(r);
+        })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":1,"payload":{"lines":[0,1]},"content":"7章　空の道具箱","children":[{"type":"heading","depth":2,"payload":{"lines":[1,2]},"content":"7.1　社内ツールと自動化が重要な理由","children":[{"type":"heading","depth":3,"payload":{"lines":[2,3]},"content":"7.1.1　自動化による改善"},{"type":"heading","depth":3,"payload":{"lines":[3,4]},"content":"7.1.2　自動化によるビジネスへの影響"}]},{"type":"heading","depth":2,"payload":{"lines":[4,5]},"content":"7.2　なぜ組織はもっと自動化しないのか","children":[{"type":"heading","depth":3,"payload":{"lines":[5,6]},"content":"7.2.1　自動化を文化的な優先事項と位置付ける"},{"type":"heading","depth":3,"payload":{"lines":[6,7]},"content":"7.2.2　自動化とツール開発のための人員"}]},{"type":"heading","depth":2,"payload":{"lines":[7,8]},"content":"7.3　自動化に関する文化の問題を解決する","children":[{"type":"heading","depth":3,"payload":{"lines":[8,9]},"content":"7.3.1　手動での作業は認めない"},{"type":"heading","depth":3,"payload":{"lines":[9,10]},"content":"7.3.2　「ノー」という答えを支持する"},{"type":"heading","depth":3,"payload":{"lines":[10,11]},"content":"7.3.3　手動作業のコスト"}]},{"type":"heading","depth":2,"payload":{"lines":[11,12]},"content":"7.4　自動化を優先する"},{"type":"heading","depth":2,"payload":{"lines":[12,13]},"content":"7.5　自動化の目標を決める","children":[{"type":"heading","depth":3,"payload":{"lines":[13,14]},"content":"7.5.1　すべてのツールの要件としての自動化"},{"type":"heading","depth":3,"payload":{"lines":[14,15]},"content":"7.5.2　業務の中で自動化を優先する"},{"type":"heading","depth":3,"payload":{"lines":[15,16]},"content":"7.5.3　自動化をスタッフの優先事項とする"},{"type":"heading","depth":3,"payload":{"lines":[16,17]},"content":"7.5.4　トレーニングと学習のための時間を確保する"}]},{"type":"heading","depth":2,"payload":{"lines":[17,18]},"content":"7.6　スキルセットのギャップを埋める","children":[{"type":"heading","depth":3,"payload":{"lines":[18,19]},"content":"7.6.1　自分が関わったものは所有する必要があるという考え"},{"type":"heading","depth":3,"payload":{"lines":[19,20]},"content":"7.6.2　新しいスキルセットの構築"}]},{"type":"heading","depth":2,"payload":{"lines":[20,21]},"content":"7.7　自動化のアプローチ","children":[{"type":"heading","depth":3,"payload":{"lines":[21,22]},"content":"7.7.1　タスクにおける安全性"},{"type":"heading","depth":3,"payload":{"lines":[22,23]},"content":"7.7.2　安全のための設計"},{"type":"heading","depth":3,"payload":{"lines":[23,24]},"content":"7.7.3　タスクの複雑さ"},{"type":"heading","depth":3,"payload":{"lines":[24,25]},"content":"7.7.4　タスクをランク付けする方法"},{"type":"heading","depth":3,"payload":{"lines":[25,26]},"content":"7.7.5　単純なタスクの自動化"},{"type":"heading","depth":3,"payload":{"lines":[26,27]},"content":"7.7.6　困難なタスクの自動化"},{"type":"heading","depth":3,"payload":{"lines":[27,28]},"content":"7.7.7　複雑なタスクの自動化"}]},{"type":"heading","depth":2,"payload":{"lines":[28,29]},"content":"7.8　本章のまとめ"}]},null)</script>
+</body>
+</html>

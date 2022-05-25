@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.3/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.13.3"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.3/dist/index.umd.min.js"></script><script>(r => {
+          setTimeout(r);
+        })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":1,"payload":{"lines":[0,1]},"content":"9章　せっかくのインシデントを無駄にする","children":[{"type":"heading","depth":2,"payload":{"lines":[1,2]},"content":"9.1　良いポストモーテムの構成要素","children":[{"type":"heading","depth":3,"payload":{"lines":[2,3]},"content":"9.1.1　メンタルモデルの作成"},{"type":"heading","depth":3,"payload":{"lines":[3,4]},"content":"9.1.2　24時間ルールの遵守"},{"type":"heading","depth":3,"payload":{"lines":[4,5]},"content":"9.1.3　ポストモーテムのルール設定"}]},{"type":"heading","depth":2,"payload":{"lines":[5,6]},"content":"9.2　インシデントの発生"},{"type":"heading","depth":2,"payload":{"lines":[6,7]},"content":"9.3　ポストモーテムの実施","children":[{"type":"heading","depth":3,"payload":{"lines":[7,8]},"content":"9.3.1　ポストモーテムに招待する人を選ぶ"},{"type":"heading","depth":3,"payload":{"lines":[8,9]},"content":"9.3.2　タイムラインの振り返り"},{"type":"heading","depth":3,"payload":{"lines":[9,10]},"content":"9.3.3　アクションアイテムの定義とフォローアップ"},{"type":"heading","depth":3,"payload":{"lines":[10,11]},"content":"9.3.4　ポストモーテムのドキュメント化"},{"type":"heading","depth":3,"payload":{"lines":[11,12]},"content":"9.3.5　ポストモーテムの共有"}]},{"type":"heading","depth":2,"payload":{"lines":[12,13]},"content":"9.4　本章のまとめ"}]},null)</script>
+</body>
+</html>
