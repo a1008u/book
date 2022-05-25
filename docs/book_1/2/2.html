@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.3/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.13.3"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.3/dist/index.umd.min.js"></script><script>(r => {
+          setTimeout(r);
+        })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":1,"payload":{"lines":[0,1]},"content":"１章 戦略とチーム ― データ活用を始める前に知っておくべきこと","children":[{"type":"heading","depth":2,"payload":{"lines":[1,2]},"content":"<a href=\"./2_link/1.html\">1.分析戦略</a>","children":[{"type":"heading","depth":3,"payload":{"lines":[2,3]},"content":"分析戦略とは"},{"type":"heading","depth":3,"payload":{"lines":[3,4]},"content":"小さな成功を重ねて、データ活用への道を敷設する"},{"type":"heading","depth":3,"payload":{"lines":[4,5]},"content":"分析課題の見つけ方"},{"type":"heading","depth":3,"payload":{"lines":[5,6]},"content":"誰にでも分かるやりやすいデータから始める"},{"type":"heading","depth":3,"payload":{"lines":[6,7]},"content":"ビジュアル分析のサイクル"},{"type":"heading","depth":3,"payload":{"lines":[7,8]},"content":"データ活用に積極的な人を巻き込む"},{"type":"heading","depth":3,"payload":{"lines":[8,9]},"content":"「効率化」と「業務プロセス改革」の違い"},{"type":"heading","depth":3,"payload":{"lines":[9,10]},"content":"「クリエイター」と「ビューアー」の両者を重視する"},{"type":"heading","depth":3,"payload":{"lines":[10,11]},"content":"「要件」ではなく「ビューアーの課題」を見つけよ"},{"type":"heading","depth":3,"payload":{"lines":[11,12]},"content":"データ活用における三権分立"},{"type":"heading","depth":3,"payload":{"lines":[12,13]},"content":"権力の不均衡は不祥事を招く"}]},{"type":"heading","depth":2,"payload":{"lines":[13,14]},"content":"<a href=\"./2_link/2.html\">2.エグゼクティブの支援とプロジェクトチーム</a>","children":[{"type":"heading","depth":3,"payload":{"lines":[14,15]},"content":"「トップダウン型」と「ボトムアップ型」"},{"type":"heading","depth":3,"payload":{"lines":[15,16]},"content":"「効率化」だけでは全社へ拡大できない"},{"type":"heading","depth":3,"payload":{"lines":[16,17]},"content":"エグゼクティブに訴求すべきポイント"},{"type":"heading","depth":3,"payload":{"lines":[17,18]},"content":"推進の中核を担う「CoE」の4つの役割"},{"type":"heading","depth":3,"payload":{"lines":[18,19]},"content":"自社に最適な編成タイプはどれか？"},{"type":"heading","depth":3,"payload":{"lines":[19,20]},"content":"仲間づくりから始まるCoEの進化"},{"type":"heading","depth":3,"payload":{"lines":[20,21]},"content":"情報発信は「全方位に」「こまめに」行う"},{"type":"heading","depth":3,"payload":{"lines":[21,22]},"content":"縁の下から経営をササウェル体制を築く"},{"type":"heading","depth":3,"payload":{"lines":[22,23]},"content":"社内認知度を一気に向上させる方法"},{"type":"heading","depth":3,"payload":{"lines":[23,24]},"content":"データ活用をより広めるための仕掛け方"}]}]},null)</script>
+</body>
+</html>
