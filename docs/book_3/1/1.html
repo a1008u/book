@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.3/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.13.3"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.3/dist/index.umd.min.js"></script><script>(r => {
+          setTimeout(r);
+        })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":1,"payload":{"lines":[0,1]},"content":"第１章　チームの心理的安全性","children":[{"type":"heading","depth":2,"payload":{"lines":[1,2]},"content":"チームの心理的安全性とは？","children":[{"type":"heading","depth":3,"payload":{"lines":[2,3]},"content":"心理的「非」安全性について考える"}]},{"type":"heading","depth":2,"payload":{"lines":[3,4]},"content":"心理的安全性の向上=学習するチームをつくる","children":[{"type":"heading","depth":3,"payload":{"lines":[4,5]},"content":"そもそも「チーム」とはなにか"},{"type":"heading","depth":3,"payload":{"lines":[5,6]},"content":"リモートワークとチーム"},{"type":"heading","depth":3,"payload":{"lines":[6,7]},"content":"心理的安全性のよくある誤解"},{"type":"heading","depth":3,"payload":{"lines":[7,8]},"content":"高い基準（ハイ・スタンダード）の仕事"},{"type":"heading","depth":3,"payload":{"lines":[8,9]},"content":"心理的安全性×仕事の基準の4象限"},{"type":"heading","depth":3,"payload":{"lines":[9,10]},"content":"健全な衝突（ヘルシー・コンフリクト）がチームを育てる"},{"type":"heading","depth":3,"payload":{"lines":[10,11]},"content":"心理的安全性は何に効くか"}]},{"type":"heading","depth":2,"payload":{"lines":[11,12]},"content":"日本版「チームの心理的安全性」の４つの因子","children":[{"type":"heading","depth":3,"payload":{"lines":[12,13]},"content":"「①話やすさ」因子"},{"type":"heading","depth":3,"payload":{"lines":[13,14]},"content":"「②助け合い」因子"},{"type":"heading","depth":3,"payload":{"lines":[14,15]},"content":"「③挑戦」因子"},{"type":"heading","depth":3,"payload":{"lines":[15,16]},"content":"「④新寄歓迎」因子"}]},{"type":"heading","depth":2,"payload":{"lines":[16,17]},"content":"心理的安全性「変革の３段階」","children":[{"type":"heading","depth":3,"payload":{"lines":[17,18]},"content":"変革の3段階と前提環境"},{"type":"heading","depth":3,"payload":{"lines":[18,19]},"content":"パワーバランス"},{"type":"heading","depth":3,"payload":{"lines":[19,20]},"content":"階層構造・権力格差と承認プロセス"},{"type":"heading","depth":3,"payload":{"lines":[20,21]},"content":"職種とビジネスプロセス"},{"type":"heading","depth":3,"payload":{"lines":[21,22]},"content":"業態上の規約"},{"type":"heading","depth":3,"payload":{"lines":[22,23]},"content":"心理的安全性をもたらすリーダーはあなただ"},{"type":"heading","depth":3,"payload":{"lines":[23,24]},"content":"自分自身を「問題」の中に入れる"},{"type":"heading","depth":3,"payload":{"lines":[24,25]},"content":"自分自身の「行動」を振り返る"}]}]},null)</script>
+</body>
+</html>
